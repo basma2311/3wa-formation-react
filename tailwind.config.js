@@ -1,5 +1,4 @@
 /** @type {import('tailwindcss').Config} */
-<<<<<<< HEAD
 
 module.exports = {
 
@@ -18,13 +17,3 @@ module.exports = {
   plugins: [],
 
 }
-=======
-module.exports = {
-  content: [],
-  theme: {
-    extend: {},
-  },
-  plugins: [],
-}
-
->>>>>>> 51d2944 (tailwind config)
