@@ -1,25 +1,29 @@
-import logo from './logo.svg';
-import './App.css';
+import data from "./assets/data";
+import Caracter from "./Components/Caracter";
+import Carte from "./Components/Caracter";
+
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="min-h-screen bg-slate-700 font-mono ">
+      <ul className="grid sm:grid-cols-2 md:grid-cols-3 gap-4 justify-center items-star ">
+        {data.map((item, index) => (
+          <li key={index} >
+            <Caracter
+              frame={item.image}
+              name={item.name}
+              description={item.description}
+            />
+
+
+          </li>
+
+        ))}
+
+      </ul>
     </div>
-  );
-}
+  )
+};
 
 export default App;
+
