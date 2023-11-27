@@ -12,12 +12,6 @@ export default function App() {
         <label className='text-left'>Select Tip % </label>
         <div className='grid grid-cols-3 grid-rows-2 '>
         <input 
-        onClick={
-          (e) => {
-            e.target.value = 15;
-          }
-        }
-        
         type='submit' value='5%' className='border-2 rounded-lg bg-indigo-500 text-white '/>
         <input type='submit' value='10%' className='border-2 rounded-lg bg-indigo-500 text-white '/>
         <input type='submit' value='15%' className='border-2 rounded-lg bg-indigo-500 text-white '/>
